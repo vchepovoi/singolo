@@ -4,7 +4,9 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.head-bottom, .slide-bottom, .foot-bottom {
+.head-bottom,
+.slide-bottom,
+.foot-bottom {
   width: 100%;
   height: 6px;
   background-color: #2C3445;
@@ -23,31 +25,29 @@ body {
   color: #FF6C64;
 }
 
-.logo {
+.head-top__logo {
   font-size: 25px;
   letter-spacing: -0.7px;
   line-height: 115%;
   margin: 30px 0 31px 41px;
 }
 
-.nav {
+.head-top__nav {
   font-size: 12px;
   margin: 42px 39px 0 0;
 }
 
-.nav li:first-child a {
+.head-top__nav li:first-child a {
   color: #FF6C64;
 }
 
-.nav li {
+.head-top__nav li {
   display: inline-block;
   margin-left: 26.4px;
   position: relative;
 }
 
-.nav li:nth-child(2):before, .nav li:nth-child(3):before,
-.nav li:nth-child(4):before, .nav li:nth-child(5):before,
-.nav li:nth-child(6):before {
+.head-top__nav li:not(:first-child):before {
   content: "";
   position: absolute;
   display: block;
@@ -60,12 +60,12 @@ body {
   left: -16px;
 }
 
-.nav li a {
+.head-top__nav li a {
   text-decoration: none;
   color: #ffffff;
 }
 
-.nav li a:hover {
+.head-top__nav li a:hover {
   color: #FF6C64;
 }
 
@@ -80,31 +80,31 @@ body {
   background-image: url(assets/bg.png);
 }
 
-.chevLeft {
+.slider__chevLeft {
   position: absolute;
   top: 281px;
   left: 42px;
 }
 
-.chevLeft:hover {
+.slider__chevLeft:hover {
   opacity: 0.7;
 }
 
-.chevRight:hover {
+.slider__chevRight:hover {
   opacity: 0.7;
 }
 
-.chevRight {
+.slider__chevRight {
   position: absolute;
   top: 281px;
   right: 40px;
 }
 
-.tel1 {
+.slider__tel1 {
   margin: 53px 0 0 112px;
 }
 
-.tel2 {
+.slider__tel2 {
   margin: 0 0 122px 70px;
 }
 
@@ -112,114 +112,106 @@ body {
   background-color: #FF676B;
 }
 
-.footer {
+.services {
   color: #636D8B;
   padding-top: 59px;
   background-color: #f2f2f2;
 }
 
-.footTitle {
+.services__title {
   font-size: 30px;
   margin: 0 0 0 39px;
   font-weight: 900;
 }
 
-.footText {
+.services__text {
   font-size: 18px;
   letter-spacing: -0.07px;
   line-height: 30px;
   margin: 19px 0 0 40px;
 }
 
-.footTextS {
+.services__textS {
   letter-spacing: -0.23px;
 }
 
-.services {
+.services-kinds {
   display: flex;
   flex-wrap: wrap;
   padding: 28px 0 0 120px;
 }
 
-.service-pen, .service-star , .service-bulb,
- .service-heart, .service-phone, .service-bubble {
+.services-kind__pen,
+.services-kind__star ,
+.services-kind__bulb,
+.services-kind__heart,
+.services-kind__phone,
+.services-kind__bubble {
   position: relative;
   width: 220px;
   margin:  0 99px 12px 0;
 }
 
- .service-pen:before, .service-star:before , .service-bulb:before,
-  .service-heart:before, .service-phone:before, .service-bubble:before {
+ .services-kind__pen:before,
+ .services-kind__star:before,
+ .services-kind__bulb:before,
+ .services-kind__heart:before,
+ .services-kind__phone:before,
+ .services-kind__bubble:before {
    position: absolute;
    top: 20px;
    left: -79px;
    margin-left: 0;
   }
 
-.service-title {
+.services-kind__title {
   font-size: 18px;
   font-weight: 700;
 }
 
- .service-text {
+ .services-kind__text {
   font-size: 12px;
   line-height: 21.6px;
   text-align: justify;
   margin: -7px 0 0 0;
  }
 
-.service-pen {
-
-}
-
-.service-pen:before {
+.services-kind__pen:before {
   content: url("assets/pen.png");
 }
 
-.service-bulb {
-
-}
-
-.service-bulb:before {
+.services-kind__bulb:before {
   content: url("assets/bulb.png");
 }
 
-.service-heart {
+.services-kind__heart {
   margin: 0;
 }
 
-.service-heart:before {
+.services-kind__heart:before {
   content: url("assets/heart.png");
 }
 
-.service-phone {
-
-}
-
-.service-phone:before {
+.services-kind__phone:before {
   content: url("assets/phone.png");
 }
 
-.service-bubble {
+.services-kind__bubble {
 
 }
 
-.service-bubble:before {
+.services-kind__bubble:before {
   content: url("assets/bubble.png");
 }
 
-.service-star {
-  margin: 0 0 68px 0;
+.services-kind__star {
+  margin: 0 0 64px 0;
 }
 
-.service-star:before {
+.services-kind__star:before {
   content: url("assets/star.png");
 }
 
 .foot-bottom {
   background-color: #ffffff;
-}
-
-/* {
-outline: 1px solid red;
 }
